@@ -2,7 +2,7 @@
 const execa = require('execa');
 const isPng = require('is-png');
 const isStream = require('is-stream');
-const pngquant = require('pngquant-bin');
+const pngquant = require('./bin/linux/pngquant');
 
 module.exports = (options = {}) => input => {
 	const isBuffer = Buffer.isBuffer(input);
